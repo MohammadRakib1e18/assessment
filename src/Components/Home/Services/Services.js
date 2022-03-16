@@ -58,7 +58,7 @@ const Services = () => {
                         className="form-check-label"
                         htmlFor="flexSwitchCheckDefault1"
                     >
-                        Long stories<span className="text-success fw-bold">({2})</span>
+                        Long stories<span className="text-success fw-bold">({4})</span>
                     </label>
                 </div>
                 <div className="form-check form-switch mx-3">
@@ -72,7 +72,7 @@ const Services = () => {
                         className="form-check-label"
                         htmlFor="flexSwitchCheckDefault2"
                     >
-                        Short stories<span className="text-success fw-bold">({2})</span>
+                        Short stories<span className="text-success fw-bold">({2}})</span>
                     </label>
                 </div>
             </div>
