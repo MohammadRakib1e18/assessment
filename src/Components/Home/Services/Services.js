@@ -15,6 +15,11 @@ const Services = () => {
             .then((data) => setServices(data));
     }, [long,short]);
 
+    const handleDeleteUser=()=>{
+        setLong(0);
+        setShort(0);
+    }
+
     let len = services.length;
 
     const show = (value) => {
@@ -36,7 +41,7 @@ const Services = () => {
         <>
             <div className="header">
                 <span className=" fs-5 mx-4">Blogs</span>
-                <button type="button" className="btn btn-secondary p-0 px-1 ">
+                <button type="button" onClick={() => handleDeleteUser()} className="btn btn-secondary p-0 px-1 ">
                     Delete all
                 </button>
                 {/* <button onClick={() => handleDeleteUser(order.id)}>
