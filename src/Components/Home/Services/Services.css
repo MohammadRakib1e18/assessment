@@ -1,9 +1,17 @@
-.services{
+.services {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
 }
-h3{
+h3 {
     margin-left: 10px;
-    margin-bottom:-5px;
+    margin-bottom: -5px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
 }

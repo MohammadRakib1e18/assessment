@@ -10,7 +10,7 @@ const Services = () => {
     let old = [];
 
     useEffect(() => {
-        fetch("products.json")
+        fetch("https://desolate-stream-12621.herokuapp.com/products")
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, [long,short]);
@@ -53,7 +53,7 @@ const Services = () => {
                         className="form-check-label"
                         htmlFor="flexSwitchCheckDefault1"
                     >
-                        Long stories
+                        Long stories<span className="text-success fw-bold">({2})</span>
                     </label>
                 </div>
                 <div className="form-check form-switch mx-3">
@@ -67,7 +67,7 @@ const Services = () => {
                         className="form-check-label"
                         htmlFor="flexSwitchCheckDefault2"
                     >
-                        Short stories
+                        Short stories<span className="text-success fw-bold">({2})</span>
                     </label>
                 </div>
             </div>
