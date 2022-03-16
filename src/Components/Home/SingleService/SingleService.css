@@ -3,11 +3,9 @@
 }
 .product {
     display:flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid rgb(110, 107, 107);
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 7px 35px gray;
 }
@@ -15,8 +13,13 @@
     border: 2px solid steelblue;
     box-shadow: 5px 10px 40px lightblue;
 }
-.product img{
+.image img{
     text-align: center;
     border-radius: 10%;
-    width: 100%;
+    width: 160px;
+    height: 180px;
+}
+h5{
+    color:rgb(18, 109, 247);
+    
 }

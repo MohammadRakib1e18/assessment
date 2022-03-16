@@ -1,4 +1,5 @@
 import React from "react";
+import Services from "../Services/Services";
 import "./Navigation.css";
 // import Swal from "sweetalert2";
 // import { useState } from "react/cjs/react.production.min";
@@ -39,10 +40,24 @@ const Navigation = () => {
     //         }
     //     });
     // };
+    let long = 0;
+    let short = 0;
+    const show = (value) => {
+        if (value === 1) {
+            long = !long;
+        }
+        if (value === 2) {
+            short = !short;
+        }
+        // <Services longV={long} shortV={short}></Services>;
+    };
+
     return (
         <div className="header">
             <span className=" fs-5 mx-4">Blogs</span>
-            <button  type="button" className="btn btn-secondary p-0 px-1 ">Delete all</button>
+            <button type="button" className="btn btn-secondary p-0 px-1 ">
+                Delete all
+            </button>
             {/* <button onClick={() => handleDeleteUser(order.id)}>
                 Delete all
             </button> */}
@@ -51,8 +66,12 @@ const Navigation = () => {
                     className="form-check-input"
                     type="checkbox"
                     id="flexSwitchCheckDefault1"
+                    onClick={() => show(1)}
                 />
-                <label className="form-check-label" htmlFor="flexSwitchCheckDefault1">
+                <label
+                    className="form-check-label"
+                    htmlFor="flexSwitchCheckDefault1"
+                >
                     Long stories
                 </label>
             </div>
@@ -61,8 +80,12 @@ const Navigation = () => {
                     className="form-check-input"
                     type="checkbox"
                     id="flexSwitchCheckDefault2"
+                    onClick={() => show(2)}
                 />
-                <label className="form-check-label" htmlFor="flexSwitchCheckDefault2">
+                <label
+                    className="form-check-label"
+                    htmlFor="flexSwitchCheckDefault2"
+                >
                     Short stories
                 </label>
             </div>
